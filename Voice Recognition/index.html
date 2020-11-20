@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="voice.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Speech Recognition</title>
+</head>
+
+<body>
+    <div class="header">
+        <img class="xbot " src="xbot.png">
+        <h2>XBot</h2>
+        <h6>Speech Recognition Bot</h6>
+    </div>
+    <div class="content">
+        <span class="span1">
+            <a id="btn" onclick='recognition.start()'><i class="fas fa-microphone"></i></a>
+        </span>
+        <h1 id="result"></h1>
+        <a class="commands" href="commands.html" target="blank">See All Commands here<i
+                class="fas fa-external-link-alt"></i></a>
+
+    </div>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+</body>
+
+</html>
