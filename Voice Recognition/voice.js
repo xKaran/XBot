@@ -39,8 +39,6 @@ function read(text) {
         speech.text = 'My name Is XBot';
     else if (text.includes('who created you'))
         speech.text = 'The Coder Created me';
-    else if (text.includes('happy Diwali'))
-        speech.text = 'same to you';
     else if (text.includes('alert'))
         alert("Hello! I am an alert box!!");
     window.speechSynthesis.speak(speech);
